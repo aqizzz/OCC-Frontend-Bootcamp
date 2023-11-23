@@ -1,3 +1,4 @@
 Breakfast: Biscuit
 Lunch: Noodle + fruit
+Dinner: Rice
 
