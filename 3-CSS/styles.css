@@ -1,0 +1,97 @@
+* {
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+span {
+  background-color: aquamarine;
+}
+
+li {
+  background-color: red;
+}
+
+.listClass {
+  background-color: orange;
+}
+
+#listId {
+  background-color: yellow;
+}
+
+li[value="list"] {
+  background-color: green;
+}
+
+.listClass1, .listClass2 {
+  background-color: skyblue;
+}
+
+ul .listClass3 {
+  background-color: indigo;
+  color: white;
+}
+
+/* Pseudo-Classes */
+.hoverBtn:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.activeBtn:active {
+  background-color: darkgray;
+  color: black;
+}
+
+.focusInput:focus {
+  background-color: skyblue;
+  border-width: 5px;
+}
+
+.visitedLink:visited {
+  color: red;
+}
+/* Pseudo-Elements */
+.firstLetter::first-letter {
+  font-size: 2em;
+}
+
+.firstLine::first-line {
+  color: blue;
+}
+
+.beforeAndAfter::before {
+  content: "before";
+  color: red;
+}
+
+.beforeAndAfter::after {
+  content: "after";
+  color: blue;
+}
+
+.selectParts::selection {
+  background-color: crimson;
+}
+
+/* Earlier rule */
+.cascade {
+  color: red !important;
+}
+
+/* Later rule */
+.cascade {
+  color: blue;
+}
+
+/* Box Model */
+.boxModel {
+  background-color: yellow;
+  border: brown 10px solid;
+  border-radius: 30px;
+  border-style: solid dotted dotted;
+  margin: 10px;
+  margin-bottom: 30px;
+  padding: 10px;
+  padding-left: 30px;
+}

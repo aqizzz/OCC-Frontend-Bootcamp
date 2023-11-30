@@ -1,0 +1,138 @@
+/* Box Sizing*/
+.box-content {
+  width: 200px;
+  height: 200px;
+  padding: 30px;
+  border: 2px solid black;
+  background-color: lightgray;
+  box-sizing: content-box;
+}
+
+.box-border {
+  width: 200px;
+  height: 200px;
+  padding: 20px;
+  border: 2px solid black;
+  background-color: lightblue;
+  /* box-sizing: border-box; */
+}
+
+/* Display property */
+/* 独占一行 */
+.block {
+  display: block;
+  background-color: lightcoral;
+  width: 200px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+/* 不独占一行，不能调整边框属性 */
+.inline {
+  display: inline;
+  background-color: lightgreen;
+  width: 200px;
+  padding: 10px;
+}
+/* 不独占一行，可以调整属性 */
+.inline-block {
+  display: inline-block;
+  width: 200px;
+  height: 100px;
+  background-color: lightsalmon;
+}
+
+/* Element Positioning */
+/* 不能改变位置 */
+.static {
+  position: static;
+  background-color: lightseagreen;
+  width: 200px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+/* 可以移动 */
+.relative {
+  position: relative;
+  background-color: chartreuse;
+  width: 200px;
+  height: 50px;
+  /* margin-bottom: 10px; */
+  left: 80px;
+  top: 0;
+}
+/* 位置取决于父级元素 */
+.absolute {
+  position: absolute;
+  background-color: darkmagenta;
+  width: 200px;
+  height: 50px;
+  top: 0;
+  left: 80px;
+}
+
+.fixed {
+  position: fixed;
+  background-color: lightpink;
+  width: 200px;
+  height: 50px;
+  top: 0;
+  right: 20px;
+}
+
+/* 只能左移，顶需要为0 */
+.sticky {
+  position: sticky;
+  background-color: deeppink;
+  width: 200px;
+  height: 50px;
+  top: 0;
+  left: 20px;
+}
+
+.float-right {
+  float: right;
+  width: 200px;
+  height: 200px;
+  background-color: indianred;
+}
+
+.float-left {
+  float: left;
+  width: 200px;
+  height: 200px;
+  background-color: goldenrod;
+}
+
+.clear-float {
+  clear: both;
+  background-color: yellowgreen;
+  padding: 10px;
+}
+
+/* Centering Elements */
+.parent-box {
+  height: 200px;
+  width: 300px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 20px;
+  /* text-align: center; */
+  background-color: aqua;
+}
+/* 子元素居中 */
+.center-horizontal {
+  padding: 20px;
+  background-color: gray;
+}
+
+.center-vertical {
+  background-color: coral;
+  display: flex;
+  text-align: center;
+}
+
+.center-horizontal-vertical {
+  background-color: peru;
+  display: flex;
+  align-items: center;
+}
